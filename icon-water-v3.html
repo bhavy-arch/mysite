@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en" data-f="water">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevated ICON | Premium Hydrogen Water With Electrolytes</title>
+<meta name="description" content="Elevated ICON delivers premium hydrogen-infused water with electrolytes. Zero calories, zero sugar, backed by 1000+ scientific studies. 4 flavors.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+[data-f="water"]      {--ac:#00b4d8;--ad:#0096b7;--al:#90e0ef;--ap:#caf0f8;--ag:rgba(0,180,216,.09);--ab:#f0f9fc;--glow:rgba(0,180,216,.28);--rgb:0,180,216}
+[data-f="watermelon"] {--ac:#e84068;--ad:#c4264a;--al:#ff8fab;--ap:#ffe0e8;--ag:rgba(232,64,104,.09);--ab:#fff5f7;--glow:rgba(232,64,104,.28);--rgb:232,64,104}
+[data-f="lemon"]      {--ac:#c4a800;--ad:#9a8500;--al:#e8cc30;--ap:#fef9d8;--ag:rgba(196,168,0,.09);--ab:#fdfce8;--glow:rgba(196,168,0,.28);--rgb:196,168,0}
+[data-f="strawberry"] {--ac:#d84828;--ad:#b83818;--al:#ff7858;--ap:#ffe8e0;--ag:rgba(216,72,40,.09);--ab:#fff5f0;--glow:rgba(216,72,40,.28);--rgb:216,72,40}
+
+:root{
+  --w:#fff;--sn:#f5f7fa;--ms:#e0e8ee;
+  --bk:#0a0e17;--ch:#1a2232;--sl:#3d4f68;--gr:#68788d;--sv:#98aab8;
+  --sp:cubic-bezier(.16,1,.3,1);
+  --so:cubic-bezier(.22,1,.36,1);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--w);color:var(--ch);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;cursor:none}
+::selection{background:var(--ac);color:#fff}
+img{max-width:100%;display:block}
+
+/* ─── SNIPCART BRAND THEME ─── */
+#snipcart{
+  --color-link:#00b4d8;--color-link-hover:#0096b7;
+  --color-icon:#00b4d8;
+  --bgColor-buttonPrimary:#0a0e17;--bgColor-buttonPrimary-hover:#00b4d8;
+  --color-buttonPrimary:#fff;--color-buttonPrimary-hover:#fff;
+  --bgColor-badge:#00b4d8;--color-badge:#fff;
+  --borderColor-input-hover:#00b4d8;--borderColor-input-focus:#00b4d8;
+}
+
+/* ─── CURSOR ─── */
+#cur,#cur2{position:fixed;border-radius:50%;pointer-events:none;z-index:99999}
+#cur{width:9px;height:9px;background:var(--ac);transform:translate(-50%,-50%);transition:width .22s var(--sp),height .22s var(--sp),background .4s}
+#cur2{width:34px;height:34px;border:1.5px solid rgba(var(--rgb),.35);background:transparent;transform:translate(-50%,-50%);transition:width .38s var(--sp),height .38s var(--sp),border-color .4s}
+body:has(a:hover,button:hover,.fq:hover) #cur{width:16px;height:16px}
+body:has(a:hover,button:hover,.fq:hover) #cur2{width:50px;height:50px;border-color:var(--ac)}
+
+/* ─── PROGRESS ─── */
+#prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--ac),var(--al));z-index:99998;width:0;box-shadow:0 0 10px var(--glow);transition:background .5s}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:9000}
+.nb{padding:.85rem 3.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.82);backdrop-filter:blur(40px) saturate(2);border-bottom:1px solid rgba(0,0,0,.05);transition:all .4s}
+nav.scrolled .nb{background:rgba(255,255,255,.96);box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.nl{font-family:'Bebas Neue';font-size:1.55rem;color:var(--bk);text-decoration:none;letter-spacing:.05em}.nl span{color:var(--ac);transition:color .4s}
+.nm{display:flex;gap:2rem;list-style:none;align-items:center}
+.nm a{font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sl);text-decoration:none;transition:color .3s;position:relative}.nm a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--ac);transition:width .35s var(--sp)}.nm a:hover{color:var(--bk)}.nm a:hover::after{width:100%}
+.nc{padding:.55rem 1.6rem;background:var(--ac);color:#fff;border-radius:100px;font-weight:700;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .35s var(--sp);border:none;box-shadow:0 4px 16px var(--glow)}.nc:hover{transform:scale(1.06) translateY(-1px);box-shadow:0 8px 28px var(--glow)}
+.mb{display:none;background:none;border:none;cursor:none;flex-direction:column;gap:5px;padding:4px}.mb span{display:block;width:22px;height:2px;background:var(--ch);border-radius:2px}
+.cart-btn{display:inline-flex;align-items:center;gap:.4rem;font-family:inherit}
+.cart-btn svg{width:14px;height:14px;flex-shrink:0}
+.cart-count{background:rgba(255,255,255,.28);border-radius:100px;font-size:.56rem;font-weight:800;min-width:16px;height:16px;padding:0 4px;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.ntk{overflow:hidden;padding:.3rem 0;background:rgba(255,255,255,.6);border-bottom:1px solid rgba(0,0,0,.04);backdrop-filter:blur(10px)}
+.ntk-t{display:flex;gap:2.5rem;width:max-content;animation:tkr 32s linear infinite}
+.nt{font-family:'Bebas Neue';font-size:.68rem;letter-spacing:.3em;white-space:nowrap;color:var(--sv)}.nt.c{color:var(--ac)}
+.nd{align-self:center;width:3px;height:3px;border-radius:50%;background:var(--ac);flex-shrink:0}
+@keyframes tkr{to{transform:translateX(-50%)}}
+
+/* ─── HERO ─── */
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;padding:8rem 5rem 4rem;max-width:1480px;margin:0 auto;min-height:100vh;position:relative;overflow:hidden}
+.hero-bg{position:absolute;top:50%;right:4%;transform:translateY(-50%);font-family:'Bebas Neue';font-size:26vw;color:rgba(0,0,0,.012);pointer-events:none;z-index:0;white-space:nowrap;user-select:none}
+.hl{position:relative;z-index:2}
+.htag-pill{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .9rem .35rem .5rem;border-radius:100px;background:var(--ag);border:1px solid var(--ap);font-size:.55rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ad);margin-bottom:1.2rem;transition:all .5s}
+.htag-pill span{width:6px;height:6px;border-radius:50%;background:var(--ac);display:inline-block;animation:pulse 2s ease-in-out infinite;transition:background .5s}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+.hh{font-family:'Bebas Neue';font-size:clamp(4.2rem,8.5vw,8rem);line-height:.88;color:var(--bk);margin-bottom:1.4rem;letter-spacing:-.01em}
+.hh .ha{color:var(--ac);transition:color .5s;display:inline-block;position:relative}
+.hh .ha::after{content:'';position:absolute;bottom:6px;left:0;right:0;height:4px;background:var(--ac);border-radius:2px;opacity:.25;transition:background .5s}
+.hp{font-size:1.08rem;color:var(--sl);line-height:1.82;max-width:460px;margin-bottom:2rem}.hp strong{color:var(--bk);font-weight:800}
+.hb{display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:2rem}
+
+/* Buttons */
+.btn-p{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 2.4rem;border-radius:100px;background:var(--bk);color:#fff;font-size:.65rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .4s var(--sp);border:none;cursor:none;overflow:hidden;position:relative}
+.btn-p::before{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.1) 50%,transparent 75%);transform:translateX(-100%);transition:transform .7s}
+.btn-p:hover::before{transform:translateX(100%)}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(10,14,23,.22)}
+.btn-s{display:inline-flex;align-items:center;gap:.4rem;padding:.95rem 2rem;border-radius:100px;background:transparent;color:var(--ch);border:1.5px solid var(--ms);font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .35s var(--sp);cursor:none}
+.btn-s:hover{border-color:var(--ch);color:var(--bk);transform:translateY(-2px)}
+
+/* Flavor switcher */
+.fnav{display:flex;align-items:center;gap:1rem;margin-bottom:2rem}
+.fnav-name{font-family:'Bebas Neue';font-size:1.15rem;color:var(--ac);letter-spacing:.06em;min-width:148px;text-align:center;transition:color .4s}
+.fnav-btn{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ms);background:var(--w);cursor:none;display:flex;align-items:center;justify-content:center;transition:all .3s var(--sp);color:var(--sl)}
+.fnav-btn:hover{border-color:var(--ac);background:var(--ag);transform:scale(1.12)}
+.fnav-btn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5}
+.fnav-dots{display:flex;gap:.5rem}.fnav-dot{width:7px;height:7px;border-radius:50%;background:var(--ms);cursor:none;transition:all .4s var(--sp)}.fnav-dot.on{background:var(--ac);transform:scale(1.35)}
+
+.hstats{display:flex;gap:2.5rem;padding-top:1.6rem;border-top:1px solid var(--ms)}
+.hstat{display:flex;flex-direction:column}.hstat b{font-family:'Bebas Neue';font-size:2rem;color:var(--bk);line-height:1;transition:color .4s}.hstat span{font-size:.44rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--sv);margin-top:.15rem}
+
+/* Hero Right */
+.hr{position:relative;display:flex;align-items:center;justify-content:center;min-height:600px;z-index:2}
+.hcan{position:relative;z-index:3;transform-origin:50% 90%}
+.hcan img{height:560px;width:auto;filter:drop-shadow(0 50px 90px rgba(0,0,0,.15)) drop-shadow(0 10px 30px rgba(var(--rgb),.1));transition:all .8s var(--sp)}
+.hring{position:absolute;top:50%;left:50%;border-radius:50%;transform:translate(-50%,-50%);border:1px solid var(--ap);transition:border-color .5s}
+.hring-1{width:440px;height:440px}
+.hring-2{width:360px;height:360px;border-style:dashed;border-color:rgba(0,0,0,.06);animation:sp 45s linear infinite}
+.hring-3{width:280px;height:280px;border-color:var(--ap);opacity:.4;animation:sp 30s linear infinite reverse}
+.hglow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 65%);filter:blur(50px);transition:all .6s;pointer-events:none}
+@keyframes sp{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* Floating pills on can */
+.fpill{position:absolute;padding:.38rem .9rem;border-radius:100px;background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.08);font-size:.52rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sl);backdrop-filter:blur(12px);box-shadow:0 4px 18px rgba(0,0,0,.07);z-index:4;white-space:nowrap}
+.fpill:nth-child(5){top:16%;right:2%;animation:fp1 5s ease-in-out infinite}
+.fpill:nth-child(6){bottom:28%;right:-4%;animation:fp2 4.5s ease-in-out infinite .7s}
+.fpill:nth-child(7){top:40%;left:-6%;animation:fp1 5.5s ease-in-out infinite .3s}
+.fpill:nth-child(8){bottom:14%;left:4%;animation:fp2 4s ease-in-out infinite 1s}
+@keyframes fp1{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+@keyframes fp2{0%,100%{transform:translateY(0) rotate(1.5deg)}50%{transform:translateY(-7px) rotate(-1deg)}}
+
+/* ─── AUDIENCE BAR ─── */
+.aud{background:var(--bk);padding:2.5rem 3rem;overflow:hidden}
+.aud-in{max-width:1200px;margin:0 auto}
+.aud-tag{font-size:.55rem;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--ac);margin-bottom:1.2rem;display:block}
+.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06);border-radius:16px;overflow:hidden}
+.aud-item{background:#0d1420;padding:1.6rem 1.4rem;transition:background .3s var(--sp);cursor:default}
+.aud-item:hover{background:#121926}
+.aud-ico{font-size:1.6rem;margin-bottom:.7rem;line-height:1}
+.aud-label{font-family:'Bebas Neue';font-size:1.15rem;color:#fff;letter-spacing:.04em;margin-bottom:.3rem}
+.aud-desc{font-size:.73rem;color:#667788;line-height:1.55}
+
+/* ─── TRUST ─── */
+.trust{padding:1.6rem 3.5rem;background:var(--sn);border-top:1px solid rgba(0,0,0,.04);border-bottom:1px solid rgba(0,0,0,.04);display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.ti{display:flex;align-items:center;gap:.5rem;font-size:.68rem;font-weight:700;color:var(--sl);padding:.5rem 1.8rem;position:relative;transition:color .3s}.ti:hover{color:var(--bk)}
+.ti+.ti::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);height:18px;width:1px;background:var(--ms)}
+.ti svg{width:16px;height:16px;stroke:var(--ac);fill:none;stroke-width:2;flex-shrink:0;transition:stroke .4s}
+
+/* ─── TICKER ─── */
+.tk{padding:.65rem 0;overflow:hidden;border-bottom:1px solid rgba(0,0,0,.04)}
+.tkt{display:flex;gap:3rem;width:max-content;animation:tkr 26s linear infinite}
+.tk:hover .tkt{animation-play-state:paused}
+.tw{font-family:'Bebas Neue';font-size:.78rem;letter-spacing:.3em;white-space:nowrap;color:var(--sv)}.tw.c{color:var(--ac)}
+.td2{align-self:center;width:3px;height:3px;border-radius:50%;background:var(--ac);flex-shrink:0}
+
+/* ─── SECTION BASICS ─── */
+.sec{padding:7rem 3.5rem}
+.eyebrow{font-size:.58rem;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:var(--ac);margin-bottom:.7rem;display:flex;align-items:center;gap:.6rem;transition:color .4s}.eyebrow::before{content:'';width:22px;height:1.5px;background:currentColor;flex-shrink:0}
+.sh{font-family:'Bebas Neue';font-size:clamp(2.8rem,5.5vw,4.6rem);letter-spacing:-.01em;color:var(--bk);line-height:.92;margin-bottom:.8rem}
+.sh em{font-style:normal;color:var(--ac);transition:color .4s}
+.lead{font-size:1.05rem;color:var(--gr);line-height:1.85;max-width:560px}
+.ct{text-align:center}.ct .eyebrow{justify-content:center}.ct .lead{margin:0 auto}
+
+/* ─── SLANT ─── */
+.slant{padding:3.5rem 0;overflow:hidden;transform:rotate(-2deg) scale(1.06);margin:-1.5rem 0}
+.slt{display:flex;gap:1.8rem;width:max-content;animation:sl 22s linear infinite}
+.slt.rv{animation-direction:reverse;animation-duration:28s;margin-top:.5rem}
+.sw{font-family:'Bebas Neue';font-size:clamp(2rem,4.5vw,3.8rem);white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px var(--ms);transition:all .4s var(--sp);cursor:default}
+.sw:hover{color:var(--ac);-webkit-text-stroke-width:0px}
+.sw.f{color:rgba(0,0,0,.06);-webkit-text-stroke-width:0px}
+.ss{align-self:center;width:6px;height:6px;border-radius:50%;background:var(--ac);flex-shrink:0;transition:background .4s}
+@keyframes sl{to{transform:translateX(-50%)}}
+
+/* ─── BENEFITS ─── */
+.ben{background:var(--w);position:relative;overflow:hidden}
+.ben-mesh{position:absolute;inset:0;background:radial-gradient(ellipse 55% 60% at 50% 50%,rgba(var(--rgb),.04),transparent);transition:background .6s;pointer-events:none}
+.bw{display:grid;grid-template-columns:1fr 380px 1fr;gap:1rem;max-width:1320px;margin:3.5rem auto 0;align-items:center}
+.bc2{display:flex;flex-direction:column;gap:1.2rem}
+.bi{display:flex;gap:1rem;align-items:flex-start;padding:1.3rem 1.2rem;border-radius:16px;transition:all .4s var(--sp);border:1px solid transparent;cursor:default}
+.bi:hover{background:var(--w);border-color:rgba(var(--rgb),.15);box-shadow:0 8px 32px rgba(var(--rgb),.08);transform:translateX(-5px)}
+.br .bi:hover{transform:translateX(5px)}
+.br .bi{flex-direction:row-reverse;text-align:right}
+.bic{width:44px;height:44px;border-radius:14px;background:var(--ag);border:1px solid var(--ap);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .4s var(--sp)}
+.bic svg{width:18px;height:18px;stroke:var(--ac);fill:none;stroke-width:2;transition:all .4s}
+.bi:hover .bic{background:var(--ac);border-color:var(--ac);transform:rotate(-8deg) scale(1.1)}.bi:hover .bic svg{stroke:#fff}
+.bt{font-size:.94rem;font-weight:800;color:var(--bk);letter-spacing:-.02em;margin-bottom:.3rem}
+.bp{font-size:.82rem;color:var(--gr);line-height:1.65}
+
+/* Center can in benefits */
+.bcn{display:flex;align-items:center;justify-content:center;position:relative;height:520px}
+.bcn-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%);filter:blur(55px);transition:all .6s;pointer-events:none}
+.bcn img{width:320px;height:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.13));transition:all .6s var(--sp);position:relative;z-index:2}
+.bcn:hover img{transform:scale(1.04) translateY(-8px)}
+
+/* ─── TRUST BADGES ─── */
+.badges{background:var(--sn);padding:5rem 3.5rem}
+.badge-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;max-width:1100px;margin:3rem auto 0}
+.badge-item{background:var(--w);border:1.5px solid var(--ms);border-radius:18px;padding:1.8rem 1rem;text-align:center;transition:all .4s var(--sp);cursor:default}
+.badge-item:hover{border-color:var(--ap);transform:translateY(-5px);box-shadow:0 16px 40px rgba(var(--rgb),.08)}
+.badge-ico{font-size:2rem;margin-bottom:.7rem;line-height:1;display:block}
+.badge-name{font-weight:800;font-size:.78rem;color:var(--bk);letter-spacing:-.01em;margin-bottom:.2rem}
+.badge-sub{font-size:.68rem;color:var(--gr)}
+
+/* ─── HOW IT WORKS ─── */
+.pro{background:var(--w)}
+.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;max-width:1200px;margin:3rem auto 0}
+.pc{background:var(--sn);border:1px solid transparent;border-radius:22px;padding:2.2rem 1.6rem;transition:all .5s var(--sp);position:relative;overflow:hidden;cursor:default}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ac),var(--al));transform:scaleX(0);transition:transform .5s var(--sp);transform-origin:left}
+.pc:hover{transform:translateY(-7px);box-shadow:0 20px 50px rgba(var(--rgb),.09);border-color:var(--ap);background:var(--w)}.pc:hover::before{transform:scaleX(1)}
+.pnum{font-family:'Bebas Neue';font-size:3.5rem;color:var(--ap);line-height:1;margin-bottom:.8rem;transition:color .4s;letter-spacing:-.03em}.pc:hover .pnum{color:var(--ac)}
+.ptitle{font-weight:800;font-size:.9rem;color:var(--bk);margin-bottom:.5rem;letter-spacing:-.01em}
+.pdesc{font-size:.8rem;color:var(--gr);line-height:1.65}
+
+/* ─── WHO IT'S FOR ─── */
+.for-sec{background:var(--bk);padding:7rem 3.5rem;position:relative;overflow:hidden}
+.for-sec::before{content:'FOR YOU';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Bebas Neue';font-size:22vw;color:rgba(255,255,255,.015);white-space:nowrap;pointer-events:none}
+.for-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:1200px;margin:3rem auto 0;position:relative;z-index:2}
+.for-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:22px;padding:2rem 1.6rem;transition:all .5s var(--sp);cursor:default;position:relative;overflow:hidden}
+.for-card::before{content:'';position:absolute;top:-60%;left:-20%;width:140%;height:140%;background:radial-gradient(circle,rgba(var(--rgb),.07),transparent 60%);opacity:0;transition:opacity .5s}
+.for-card:hover{border-color:rgba(var(--rgb),.3);transform:translateY(-5px)}.for-card:hover::before{opacity:1}
+.for-emoji{font-size:2.5rem;margin-bottom:1rem;line-height:1;display:block}
+.for-title{font-family:'Bebas Neue';font-size:1.4rem;color:#fff;letter-spacing:.03em;margin-bottom:.5rem}
+.for-body{font-size:.82rem;color:#8899aa;line-height:1.7}
+.for-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.for-tag{padding:.2rem .7rem;border-radius:100px;background:rgba(var(--rgb),.12);border:1px solid rgba(var(--rgb),.2);font-size:.5rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--al);transition:background .3s}
+
+/* ─── PRODUCTS ─── */
+.prods{background:var(--ab);transition:background .5s;position:relative;overflow:hidden;padding:7rem 3.5rem}
+.prods::before{content:'THE COLLECTION';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Bebas Neue';font-size:10vw;color:rgba(0,0,0,.012);pointer-events:none;white-space:nowrap}
+.prow{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1260px;margin:3rem auto 0;position:relative;z-index:2}
+.pd{background:var(--w);border-radius:24px;padding:2.2rem 1.4rem 1.8rem;text-align:center;border:1.5px solid rgba(0,0,0,.05);transition:all .5s var(--sp);cursor:none;position:relative;overflow:hidden}
+.pdg{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:160px;height:70px;background:var(--ac);border-radius:50%;filter:blur(40px);opacity:0;transition:opacity .5s}
+.pd:hover{transform:translateY(-12px);box-shadow:0 30px 70px rgba(var(--rgb),.12);border-color:var(--ap)}.pd:hover .pdg{opacity:1}.pd:hover img{transform:rotate(-7deg) scale(1.1) translateY(-4px)}.pd:hover .pdb{transform:translateY(0);opacity:1}
+.pd img{width:auto;height:220px;margin:0 auto 1.2rem;filter:drop-shadow(0 14px 30px rgba(0,0,0,.09));transition:all .55s var(--sp);position:relative;z-index:2}
+.pd12 img{width:100%;height:auto;max-height:190px;object-fit:contain}
+.pd12-badge{position:absolute;top:1rem;right:1rem;background:var(--bk);color:#fff;font-size:.5rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .65rem;border-radius:100px;z-index:3}
+.pdn{font-family:'Bebas Neue';font-size:1.4rem;color:var(--bk);letter-spacing:.02em;line-height:1.1;margin-bottom:.2rem}
+.pdf{font-size:.5rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ac);margin:.2rem 0 .4rem;transition:color .4s}
+.pdprice{font-size:.85rem;color:var(--gr)}.pdprice b{color:var(--bk);font-weight:800}
+.pdb{display:inline-block;margin-top:.7rem;padding:.55rem 1.6rem;border-radius:100px;background:var(--ac);color:#fff;font-size:.52rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .35s var(--sp);border:none;cursor:none;transform:translateY(10px);opacity:0;position:relative;z-index:3;box-shadow:0 6px 20px var(--glow)}
+.pdb:hover{filter:brightness(1.1);transform:translateY(0) scale(1.06) !important}
+
+/* ─── SCIENCE ─── */
+.sci{padding:7rem 3.5rem;background:var(--bk);color:#fff;position:relative;overflow:hidden}
+.sci-bg{position:absolute;top:50%;right:-2%;transform:translateY(-50%);font-family:'Bebas Neue';font-size:28vw;color:rgba(255,255,255,.012);pointer-events:none;line-height:1}
+.sci-mesh{position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 60% 50%,rgba(var(--rgb),.06),transparent);pointer-events:none;transition:background .6s}
+.scin{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
+.sci .eyebrow{color:var(--al)}.sci .sh{color:#fff;font-size:clamp(2.6rem,5vw,4rem)}.sci .lead{color:#8899aa;max-width:500px}
+.scg{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:2rem}
+.scc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:1.6rem 1.4rem;transition:all .4s var(--sp);cursor:default}
+.scc:hover{border-color:rgba(var(--rgb),.3);background:rgba(var(--rgb),.05);transform:translateY(-4px)}
+.scnum{font-family:'Bebas Neue';font-size:2.8rem;color:var(--al);line-height:1;transition:color .4s}
+.sclabel{font-size:.5rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#556677;margin-top:.25rem}
+
+/* Science visual */
+.scv{display:flex;align-items:center;justify-content:center;position:relative;min-height:500px}
+.scv img{height:460px;width:auto;filter:drop-shadow(0 24px 60px rgba(var(--rgb),.18)) drop-shadow(0 0 1px rgba(255,255,255,.1));transition:all .6s var(--sp);position:relative;z-index:2}
+.scv:hover img{transform:scale(1.04) translateY(-8px)}
+.scglow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(var(--rgb),.12),transparent 65%);filter:blur(60px);pointer-events:none}
+.scr{position:absolute;border-radius:50%;top:50%;left:50%;border:1px solid rgba(var(--rgb),.08)}
+.scr1{width:340px;height:340px;transform:translate(-50%,-50%);animation:sp 28s linear infinite}
+.scr1::before{content:'';position:absolute;top:-5px;left:50%;width:10px;height:10px;border-radius:50%;background:var(--ac);transform:translateX(-50%);box-shadow:0 0 16px var(--ac)}
+.scr2{width:260px;height:260px;transform:translate(-50%,-50%);animation:sp 20s linear infinite reverse;border-style:dashed;border-color:rgba(var(--rgb),.05)}
+
+/* Studies strip */
+.studies{background:#0d1420;padding:2.5rem 3.5rem;border-top:1px solid rgba(255,255,255,.05)}
+.studies-in{max-width:1200px;margin:0 auto}
+.studies-label{font-size:.52rem;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--ac);margin-bottom:1.2rem}
+.studies-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.study-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1rem 1.2rem;transition:all .4s;cursor:default}
+.study-item:hover{border-color:rgba(var(--rgb),.25);background:rgba(var(--rgb),.04)}
+.study-title{font-weight:700;font-size:.75rem;color:#ccd;margin-bottom:.3rem;line-height:1.4}
+.study-desc{font-size:.68rem;color:#556;line-height:1.5}
+
+/* ─── NUTRITION ─── */
+.nutri{background:var(--w);padding:7rem 3.5rem}
+.ng{display:grid;grid-template-columns:1fr 1fr;gap:5rem;max-width:1160px;margin:3rem auto 0;align-items:center}
+.nfact{background:var(--sn);border:1px solid rgba(0,0,0,.07);border-radius:22px;padding:2.2rem;transition:box-shadow .4s}.nfact:hover{box-shadow:0 16px 50px rgba(0,0,0,.07)}
+.nft{font-family:'Bebas Neue';font-size:1.9rem;color:var(--bk);margin-bottom:1rem;padding-bottom:.8rem;border-bottom:2.5px solid var(--bk)}
+.nfr{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,.05);font-size:.85rem;color:var(--sl)}.nfr b{font-weight:700;color:var(--bk)}
+.nfi{margin-top:1rem;font-size:.75rem;color:var(--gr);line-height:1.65}.nfi strong{color:var(--bk)}
+.nr .lead{margin-bottom:1.6rem;font-size:1rem}
+.nbadges{display:flex;gap:.55rem;flex-wrap:wrap}
+.nbadge{padding:.42rem 1rem;border-radius:100px;background:var(--ag);border:1px solid var(--ap);font-size:.52rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ad);transition:all .35s var(--sp)}.nbadge:hover{background:var(--ac);color:#fff;border-color:var(--ac);transform:scale(1.07)}
+
+/* ─── TESTIMONIALS ─── */
+.testi{background:var(--sn);padding:7rem 3.5rem}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1160px;margin:3rem auto 0}
+.tc{background:var(--w);border:1px solid rgba(0,0,0,.06);border-radius:22px;padding:2.2rem 1.8rem;transition:all .5s var(--sp);cursor:default;position:relative;overflow:hidden}
+.tc::before{content:'"';position:absolute;top:-20px;left:14px;font-family:'Bebas Neue';font-size:9rem;color:var(--ap);line-height:1;pointer-events:none;transition:color .5s}
+.tc:hover{transform:translateY(-7px);box-shadow:0 24px 60px rgba(0,0,0,.08);border-color:var(--ap)}
+.tst{color:var(--ac);font-size:.62rem;letter-spacing:1.5px;margin-bottom:.9rem;transition:color .4s}
+.tq{font-size:.9rem;color:var(--ch);line-height:1.75;margin-bottom:1.2rem;font-style:italic;position:relative;z-index:1}
+.ta{font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--bk)}
+.tr{font-size:.52rem;color:var(--sv);margin-top:.2rem;letter-spacing:.06em}
+
+/* ─── FAQ ─── */
+.faq{background:var(--w);padding:7rem 3.5rem}
+.fl{max-width:760px;margin:3rem auto 0}
+.fi{border-bottom:1px solid var(--ms);overflow:hidden}
+.fq{font-weight:700;font-size:1rem;color:var(--bk);cursor:none;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;transition:color .3s;letter-spacing:-.02em;gap:1rem}
+.fq:hover{color:var(--ac)}
+.fq-ico{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ms);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .35s var(--sp);color:var(--gr)}
+.fq-ico svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.5;transition:transform .35s var(--sp)}
+.fi.open .fq{color:var(--ac)}.fi.open .fq-ico{background:var(--ac);border-color:var(--ac);color:#fff}.fi.open .fq-ico svg{transform:rotate(45deg)}
+.fa{max-height:0;overflow:hidden;transition:max-height .45s var(--so),padding .35s;font-size:.9rem;color:var(--gr);line-height:1.8;padding:0}
+.fi.open .fa{max-height:220px;padding-bottom:1.4rem}
+
+/* ─── CTA ─── */
+.cta{padding:9rem 3.5rem;text-align:center;background:linear-gradient(150deg,#08101c 0%,#0d1828 60%,#0a1220 100%);position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(var(--rgb),.12),transparent 60%);filter:blur(80px);pointer-events:none;transition:background .6s}
+.cta-in{max-width:720px;margin:0 auto;position:relative;z-index:2}
+.cta .eyebrow{color:var(--al);justify-content:center}
+.cta .sh{font-size:clamp(3.2rem,7.5vw,6rem);color:#fff;margin-bottom:1rem}
+.cta-p{font-size:1.05rem;color:#8899aa;line-height:1.85;margin-bottom:2.8rem}
+.cta .btn-p{background:var(--ac);font-size:.7rem;padding:1.1rem 2.8rem;box-shadow:0 12px 40px var(--glow)}.cta .btn-p:hover{background:var(--ad)}
+
+/* ─── FOOTER ─── */
+footer{padding:4.5rem 3.5rem 2rem;background:#060b12;color:var(--sv)}
+.ftg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.8fr repeat(3,1fr);gap:3.5rem}
+.ftb{font-family:'Bebas Neue';font-size:1.5rem;color:#fff;letter-spacing:.05em}.ftb span{color:var(--ac)}
+.ftb p{font-family:'Plus Jakarta Sans';font-size:.78rem;color:#445566;line-height:1.75;margin-top:.8rem;max-width:260px}
+.ftc h5{font-size:.48rem;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:var(--al);margin-bottom:.9rem;transition:color .4s}
+.ftc ul{list-style:none}.ftc li{margin-bottom:.45rem}
+.ftc a{color:#445566;text-decoration:none;font-size:.78rem;transition:color .3s}.ftc a:hover{color:#fff}
+.ftbot{max-width:1200px;margin:2.5rem auto 0;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+.ftbot p{font-size:.48rem;letter-spacing:.22em;text-transform:uppercase;color:#2a3445}
+
+/* ─── STICKY ─── */
+.sticky{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9500;padding:.75rem 1.8rem;background:var(--ac);color:#fff;font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;border-radius:100px;box-shadow:0 10px 36px var(--glow);transition:all .4s var(--sp);opacity:0;transform:translateY(20px);border:none;cursor:none}
+.sticky.show{opacity:1;transform:translateY(0)}.sticky:hover{filter:brightness(1.08);transform:translateY(-4px) !important}
+
+/* ─── REVEAL ─── */
+.r{opacity:0;transform:translateY(30px);transition:opacity .7s var(--so),transform .85s var(--sp)}.r.v{opacity:1;transform:none}
+.r-l{opacity:0;transform:translateX(-35px);transition:opacity .7s var(--so),transform .85s var(--sp)}.r-l.v{opacity:1;transform:none}
+.r-r{opacity:0;transform:translateX(35px);transition:opacity .7s var(--so),transform .85s var(--sp)}.r-r.v{opacity:1;transform:none}
+.r-s{opacity:0;transform:scale(.93);transition:opacity .65s var(--so),transform .85s var(--sp)}.r-s.v{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}.d5{transition-delay:.35s}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1100px){
+  .bw{grid-template-columns:1fr 320px 1fr}.bcn{height:450px}.bcn img{width:260px}
+  .aud-grid{grid-template-columns:repeat(2,1fr)}
+  .for-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;text-align:center;padding:7.5rem 2rem 3.5rem;min-height:auto}
+  .hl{display:flex;flex-direction:column;align-items:center}.hp{margin:0 auto 2rem}.htag-pill{align-self:center}
+  .hb,.fnav,.hstats{justify-content:center}
+  .hr{min-height:420px}.hcan img{height:420px}
+  .fpill{display:none}
+  .bw{grid-template-columns:1fr;max-width:560px;margin:3rem auto 0}.bcn{order:-1;height:360px}.bcn img{width:220px}
+  .br .bi{flex-direction:row;text-align:left}.br .bi:hover{transform:translateX(-5px)}
+  .scin{grid-template-columns:1fr;text-align:center;gap:3rem}.sci .lead{margin:0 auto}.scg{max-width:420px;margin:2rem auto 0}.scv{min-height:380px;margin-top:0}.scv img{height:340px}
+  .ng{grid-template-columns:1fr}.badge-grid{grid-template-columns:repeat(3,1fr)}
+  .studies-grid{grid-template-columns:1fr 1fr}
+  .for-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nb{padding:.75rem 1.5rem}.nm{display:none}.mb{display:flex}
+  .sec,.sci,.prods,.testi,.faq,.nutri,.badges,.for-sec{padding:5rem 1.5rem}
+  .pg,.prow{grid-template-columns:1fr 1fr}.tg{grid-template-columns:1fr}
+  .trust{gap:.6rem;padding:1.2rem 1.5rem;flex-wrap:wrap}.ti+.ti::before{display:none}
+  .aud-grid,.for-grid{grid-template-columns:1fr}.badge-grid{grid-template-columns:repeat(2,1fr)}
+  .scr{display:none}.studies-grid{grid-template-columns:1fr}.ftg{grid-template-columns:1fr 1fr}
+  .bw{max-width:100%}
+}
+@media(max-width:480px){
+  .hb{flex-direction:column;width:100%}.btn-p,.btn-s{width:100%;justify-content:center}
+  .hstats{flex-wrap:wrap;gap:1.5rem;justify-content:center}
+  .pg,.prow{grid-template-columns:1fr}.ftg{grid-template-columns:1fr}
+  .badge-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- SNIPCART — cart, checkout & payment (Stripe/PayPal handled by Snipcart) -->
+<!-- 1. Sign up free at snipcart.com, connect Stripe or PayPal under Dashboard > Payment gateway -->
+<!-- 2. Replace YOUR_SNIPCART_PUBLIC_API_KEY below with your key from Dashboard > Account > API keys -->
+<!-- 3. Keep the "Test" key while developing, switch to your "Live" key once you go live -->
+<script>
+  window.SnipcartSettings = {
+    publicApiKey: "YOUR_SNIPCART_PUBLIC_API_KEY",
+    loadStrategy: "on-user-interaction",
+    modalStyle: "side",
+    currency: "usd",
+  };
+  (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
+
+<div id="cur"></div>
+<div id="cur2"></div>
+<div id="prog"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nb">
+    <a href="#" class="nl">ELEVATED <span>ICON</span></a>
+    <ul class="nm">
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#products">Collection</a></li>
+      <li><a href="#bundles">12-Packs</a></li>
+      <li><a href="#science">Science</a></li>
+      <li><a href="#nutrition">Nutrition</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><button class="nc cart-btn snipcart-checkout" aria-label="Open cart" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>Cart <span class="cart-count snipcart-total-items">0</span></button></li>
+    </ul>
+    <button class="mb" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="ntk"><div class="ntk-t" id="navtk"></div></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">ICON</div>
+  <div class="hl">
+    <div class="htag-pill r" id="ho-pill"><span></span><span id="ho">Hydrogen-Infused Hydration</span></div>
+    <h1 class="hh r d1">Elevate the<br><span class="ha" id="ha-word">ICON</span> in You.</h1>
+    <p class="hp r d2" id="hpx">Premium hydrogen water with electrolytes. <strong>Zero calories. Zero sugar. Zero compromise.</strong> Advanced hydration engineered for recovery, performance, and clarity.</p>
+    <div class="hb r d3">
+      <a href="https://www.icon-water.com/collections/shop-all-icon-hydrogen-water" class="btn-p" target="_blank">Shop Collection →</a>
+      <a href="#science" class="btn-s">The Science</a>
+    </div>
+    <div class="fnav r d3">
+      <button class="fnav-btn" id="fprev"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <div class="fnav-dots" id="fdots"></div>
+      <span class="fnav-name" id="fname">Hydrogen Water</span>
+      <button class="fnav-btn" id="fnext"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></button>
+    </div>
+    <div class="hstats r d4">
+      <div class="hstat"><b>0</b><span>Calories</span></div>
+      <div class="hstat"><b>0</b><span>Sugar</span></div>
+      <div class="hstat"><b>H₂</b><span>Infused</span></div>
+      <div class="hstat"><b>12oz</b><span>Sleek Can</span></div>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="hring hring-1"></div>
+    <div class="hring hring-2"></div>
+    <div class="hring hring-3"></div>
+    <div class="hglow"></div>
+    <div class="fpill">Zero Calories</div>
+    <div class="fpill">H₂ Infused</div>
+    <div class="fpill">Electrolytes</div>
+    <div class="fpill">Pure RO Water</div>
+    <div class="hcan" id="hcan">
+      <img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONJustWaterCan.png?v=1771437654&width=533" alt="Elevated ICON Hydrogen Water" id="himg">
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR — AUDIENCE TARGETING -->
+<div class="aud">
+  <div class="aud-in">
+    <span class="aud-tag">Built For Performance. Made For Everyone.</span>
+    <div class="aud-grid">
+      <div class="aud-item r"><div class="aud-ico">🏋️</div><div class="aud-label">Athletes & Gym Goers</div><div class="aud-desc">Recover faster, reduce soreness, and replenish minerals lost during intense training.</div></div>
+      <div class="aud-item r d1"><div class="aud-ico">🧠</div><div class="aud-label">Professionals & Creatives</div><div class="aud-desc">Cut through brain fog. Hydrogen water supports mental clarity and cognitive focus — zero stimulants.</div></div>
+      <div class="aud-item r d2"><div class="aud-ico">🌿</div><div class="aud-label">Health-Conscious Living</div><div class="aud-desc">Clean label. No sugar. No chemicals. Just smart hydration backed by 1,000+ peer-reviewed studies.</div></div>
+      <div class="aud-item r d3"><div class="aud-ico">⚡</div><div class="aud-label">Active Lifestyle</div><div class="aud-desc">Running, cycling, hiking — fuel your day with hydration that actually does more than quench thirst.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust r">
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>1,000+ Peer-Reviewed Studies</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Zero Calories · Zero Sugar</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>Non-GMO · Vegan · Kosher</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.69A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Ships Nationwide</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>H₂ Infused · Electrolyte Balanced</div>
+</div>
+
+<div class="tk"><div class="tkt" id="tk1"></div></div>
+
+<!-- SLANT -->
+<div class="slant">
+  <div class="slt"><span class="sw f">Advanced Hydration</span><span class="ss"></span><span class="sw">Molecular Hydrogen</span><span class="ss"></span><span class="sw f">Zero Calories</span><span class="ss"></span><span class="sw">Electrolyte Balanced</span><span class="ss"></span><span class="sw f">Backed by Science</span><span class="ss"></span><span class="sw">Clean Hydration</span><span class="ss"></span><span class="sw f">Advanced Hydration</span><span class="ss"></span><span class="sw">Molecular Hydrogen</span><span class="ss"></span><span class="sw f">Zero Calories</span><span class="ss"></span><span class="sw">Electrolyte Balanced</span></div>
+  <div class="slt rv"><span class="sw">Living Hydration</span><span class="ss"></span><span class="sw f">Performance Water</span><span class="ss"></span><span class="sw">Cellular Recovery</span><span class="ss"></span><span class="sw f">Smarter Water</span><span class="ss"></span><span class="sw">Pure RO Water</span><span class="ss"></span><span class="sw f">No Compromise</span><span class="ss"></span><span class="sw">Living Hydration</span><span class="ss"></span><span class="sw f">Performance Water</span><span class="ss"></span><span class="sw">Cellular Recovery</span><span class="ss"></span><span class="sw f">No Compromise</span></div>
+</div>
+
+<!-- BENEFITS -->
+<section class="sec ben" id="benefits">
+  <div class="ben-mesh"></div>
+  <div class="ct">
+    <p class="eyebrow r">Why Hydrogen Water</p>
+    <h2 class="sh r d1">Hydration with <em>Purpose</em></h2>
+    <p class="lead r d2">Molecular hydrogen is the smallest molecule in the universe — small enough to penetrate every cell. Backed by 1,000+ peer-reviewed studies, the benefits are proven.</p>
+  </div>
+  <div class="bw">
+    <div class="bc2 r-l">
+      <div class="bi">
+        <div class="bic"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div><div class="bt">Enhanced Hydration</div><p class="bp">H₂ molecules improve cellular water absorption far beyond ordinary water. Smarter hydration at the molecular level.</p></div>
+      </div>
+      <div class="bi">
+        <div class="bic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><div class="bt">Fights Oxidative Stress</div><p class="bp">Selective antioxidant that neutralizes harmful free radicals without disrupting your body's beneficial natural processes.</p></div>
+      </div>
+      <div class="bi">
+        <div class="bic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div><div class="bt">Natural Energy Boost</div><p class="bp">Supports cellular energy production at the mitochondrial level. No caffeine. No crash. Just clean, sustainable fuel.</p></div>
+      </div>
+    </div>
+    <div class="bcn r-s">
+      <div class="bcn-glow"></div>
+      <img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONJustWaterCan.png?v=1771437654&width=533" alt="ICON" id="bimg">
+    </div>
+    <div class="bc2 br r-r">
+      <div class="bi">
+        <div class="bic"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+        <div><div class="bt">Reduces Inflammation</div><p class="bp">Promotes a healthy inflammatory response and faster post-workout recovery. Get back in the game sooner.</p></div>
+      </div>
+      <div class="bi">
+        <div class="bic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div><div class="bt">Muscle Recovery</div><p class="bp">Reduces fatigue and soreness. Hydrogen + electrolytes together replenish exactly what intense exercise depletes.</p></div>
+      </div>
+      <div class="bi">
+        <div class="bic"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+        <div><div class="bt">Mental Clarity</div><p class="bp">Reduces brain fog and sharpens focus. Molecular-level hydration that supports cognitive performance throughout your day.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="badges" id="badges">
+  <div class="ct">
+    <p class="eyebrow r">Clean Label Certified</p>
+    <h2 class="sh r d1">Nothing to Hide.<br><em>Everything</em> to Gain.</h2>
+    <p class="lead r d2">Three ingredients. Ultra purified water, sea salt, and molecular hydrogen. That's it. No artificial anything — and that's something we'll always be proud of.</p>
+  </div>
+  <div class="badge-grid">
+    <div class="badge-item r"><span class="badge-ico">🌱</span><div class="badge-name">Vegan</div><div class="badge-sub">100% plant-based</div></div>
+    <div class="badge-item r d1"><span class="badge-ico">☕</span><div class="badge-name">No Caffeine</div><div class="badge-sub">Natural energy only</div></div>
+    <div class="badge-item r d2"><span class="badge-ico">🌾</span><div class="badge-name">Gluten Free</div><div class="badge-sub">Safe for all diets</div></div>
+    <div class="badge-item r d3"><span class="badge-ico">🧬</span><div class="badge-name">Non-GMO</div><div class="badge-sub">Verified non-GMO</div></div>
+    <div class="badge-item r d4"><span class="badge-ico">✡️</span><div class="badge-name">Kosher</div><div class="badge-sub">Certified kosher</div></div>
+    <div class="badge-item r d5"><span class="badge-ico">0️⃣</span><div class="badge-name">Zero Sugar</div><div class="badge-sub">Zero calories too</div></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="sec pro">
+  <div class="ct">
+    <p class="eyebrow r">How It Works</p>
+    <h2 class="sh r d1">From Source to <em>Sip</em></h2>
+    <p class="lead r d2">Every can goes through a precise four-step process to deliver the highest quality hydrogen water possible.</p>
+  </div>
+  <div class="pg">
+    <div class="pc r"><div class="pnum">01</div><div class="ptitle">Ultra Purification</div><p class="pdesc">Reverse osmosis removes 99.9% of contaminants, creating the purest base water possible. Living hydration starts clean.</p></div>
+    <div class="pc r d1"><div class="pnum">02</div><div class="ptitle">Electrolyte Balance</div><p class="pdesc">Sea salt and trace minerals are precisely added — sodium, potassium, magnesium — for optimal fluid absorption.</p></div>
+    <div class="pc r d2"><div class="pnum">03</div><div class="ptitle">H₂ Infusion</div><p class="pdesc">Molecular hydrogen is infused at high concentrations using proprietary technology. This is where the magic happens.</p></div>
+    <div class="pc r d3"><div class="pnum">04</div><div class="ptitle">Sealed Fresh</div><p class="pdesc">Immediately sealed in 12oz sleek aluminum cans at peak hydrogen saturation. Every sip is as fresh as the first.</p></div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR — DETAILED -->
+<section class="for-sec">
+  <div class="ct" style="position:relative;z-index:2;margin-bottom:0">
+    <p class="eyebrow r" style="color:var(--al)">Built For Your Life</p>
+    <h2 class="sh r d1" style="color:#fff">Water That Works as Hard<br><em>as You Do</em></h2>
+    <p class="lead r d2" style="color:#8899aa;margin:0 auto">Whether you're pushing limits or just pushing through the day — Elevated ICON was made for you.</p>
+  </div>
+  <div class="for-grid">
+    <div class="for-card r">
+      <span class="for-emoji">🏃</span>
+      <div class="for-title">Endurance Athletes</div>
+      <p class="for-body">Marathoners, cyclists, and swimmers know the edge matters. H₂ reduces lactate buildup, delays muscle fatigue, and accelerates recovery so you can train harder, recover smarter.</p>
+      <div class="for-tags"><span class="for-tag">Reduce Fatigue</span><span class="for-tag">Faster Recovery</span><span class="for-tag">Peak Performance</span></div>
+    </div>
+    <div class="for-card r d1">
+      <span class="for-emoji">💪</span>
+      <div class="for-title">Gym & Strength Training</div>
+      <p class="for-body">Every rep, every set demands more from your body. Hydrogen water fights oxidative stress from intense exercise, while electrolytes keep your muscles firing properly from warm-up to cool-down.</p>
+      <div class="for-tags"><span class="for-tag">Reduce Soreness</span><span class="for-tag">Muscle Support</span><span class="for-tag">Electrolytes</span></div>
+    </div>
+    <div class="for-card r d2">
+      <span class="for-emoji">🧘</span>
+      <div class="for-title">Wellness & Everyday Health</div>
+      <p class="for-body">You don't need to be an athlete to deserve better water. Elevated ICON supports daily cellular wellness, mental clarity, and balanced inflammation for everyone who cares about what goes in their body.</p>
+      <div class="for-tags"><span class="for-tag">Mental Clarity</span><span class="for-tag">Daily Wellness</span><span class="for-tag">Clean Living</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="tk"><div class="tkt" id="tk2"></div></div>
+
+<!-- PRODUCTS -->
+<section class="sec prods" id="products">
+  <div class="ct">
+    <p class="eyebrow r">The Collection</p>
+    <h2 class="sh r d1">4 Flavors. One <em>Standard.</em></h2>
+    <p class="lead r d2">Every flavor delivers the same premium hydrogen water foundation. Molecular hydrogen. Electrolyte balance. Zero calories. Infinite hydration.</p>
+  </div>
+  <div class="prow">
+    <article class="pd r">
+      <div class="pdg"></div>
+      <img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONJustWaterCan.png?v=1771437654&width=533" alt="ICON Hydrogen Water" loading="lazy">
+      <div class="pdn">Hydrogen Water</div><div class="pdf">Pure · Ultra-Clean</div>
+      <div class="pdprice">From <b>$2.00</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-water-single"
+        data-item-name="ICON Hydrogen Water — Single Can"
+        data-item-price="2.00"
+        data-item-image="https://www.icon-water.com/cdn/shop/files/ElevatedICONJustWaterCan.png?v=1771437654&width=533"
+        data-item-url="#products"
+        data-item-description="12 fl oz single can">Add to Cart</button>
+    </article>
+    <article class="pd r d1">
+      <div class="pdg"></div>
+      <img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONWatermelonCan.png?v=1771437925&width=533" alt="ICON Watermelon" loading="lazy">
+      <div class="pdn">Watermelon</div><div class="pdf">Natural Flavor</div>
+      <div class="pdprice">From <b>$2.00</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-watermelon-single"
+        data-item-name="ICON Watermelon — Single Can"
+        data-item-price="2.00"
+        data-item-image="https://www.icon-water.com/cdn/shop/files/ElevatedICONWatermelonCan.png?v=1771437925&width=533"
+        data-item-url="#products"
+        data-item-description="12 fl oz single can">Add to Cart</button>
+    </article>
+    <article class="pd r d2">
+      <div class="pdg"></div>
+      <img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONLemonLimeCan.png?v=1771438448&width=533" alt="ICON Lemon Lime" loading="lazy">
+      <div class="pdn">Lemon &amp; Lime</div><div class="pdf">Natural Flavor</div>
+      <div class="pdprice">From <b>$2.00</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-lemonlime-single"
+        data-item-name="ICON Lemon & Lime — Single Can"
+        data-item-price="2.00"
+        data-item-image="https://www.icon-water.com/cdn/shop/files/ElevatedICONLemonLimeCan.png?v=1771438448&width=533"
+        data-item-url="#products"
+        data-item-description="12 fl oz single can">Add to Cart</button>
+    </article>
+    <article class="pd r d3">
+      <div class="pdg"></div>
+      <img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONStawberryKiwiCan.png?v=1771438574&width=533" alt="ICON Strawberry Kiwi" loading="lazy">
+      <div class="pdn">Strawberry Kiwi</div><div class="pdf">Natural Flavor</div>
+      <div class="pdprice">From <b>$2.00</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-strawberrykiwi-single"
+        data-item-name="ICON Strawberry Kiwi — Single Can"
+        data-item-price="2.00"
+        data-item-image="https://www.icon-water.com/cdn/shop/files/ElevatedICONStawberryKiwiCan.png?v=1771438574&width=533"
+        data-item-url="#products"
+        data-item-description="12 fl oz single can">Add to Cart</button>
+    </article>
+  </div>
+  <div class="ct" style="margin-top:2rem"><p class="lead r" style="font-size:.82rem;color:var(--gr)">Also available in 12-pack trays below · Free shipping on qualifying orders</p></div>
+</section>
+
+<!-- 12-PACK BUNDLES -->
+<section class="sec prods pack12" id="bundles">
+  <div class="ct">
+    <p class="eyebrow r">Stock Up &amp; Save</p>
+    <h2 class="sh r d1">The 12-Pack <em>Trays.</em></h2>
+    <p class="lead r d2">All four flavors, now in fridge-ready 12-can trays. Same hydrogen water foundation, better for real hydration habits.</p>
+  </div>
+  <div class="prow">
+    <article class="pd pd12 r">
+      <div class="pdg"></div>
+      <span class="pd12-badge">12-Pack</span>
+      <img src="images/icon-12pack-water.webp" alt="ICON Hydrogen Water 12-Pack Tray" loading="lazy">
+      <div class="pdn">Hydrogen Water</div><div class="pdf">12 × 12oz Cans</div>
+      <div class="pdprice">From <b>$21.99</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-water-12pack"
+        data-item-name="ICON Hydrogen Water — 12-Pack Tray"
+        data-item-price="21.99"
+        data-item-image="images/icon-12pack-water.webp"
+        data-item-url="#bundles"
+        data-item-description="12 × 12 fl oz cans">Add to Cart</button>
+    </article>
+    <article class="pd pd12 r d1">
+      <div class="pdg"></div>
+      <span class="pd12-badge">12-Pack</span>
+      <img src="images/icon-12pack-watermelon.webp" alt="ICON Watermelon 12-Pack Tray" loading="lazy">
+      <div class="pdn">Watermelon</div><div class="pdf">12 × 12oz Cans</div>
+      <div class="pdprice">From <b>$21.99</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-watermelon-12pack"
+        data-item-name="ICON Watermelon — 12-Pack Tray"
+        data-item-price="21.99"
+        data-item-image="images/icon-12pack-watermelon.webp"
+        data-item-url="#bundles"
+        data-item-description="12 × 12 fl oz cans">Add to Cart</button>
+    </article>
+    <article class="pd pd12 r d2">
+      <div class="pdg"></div>
+      <span class="pd12-badge">12-Pack</span>
+      <img src="images/icon-12pack-lemonlime.webp" alt="ICON Lemon Lime 12-Pack Tray" loading="lazy">
+      <div class="pdn">Lemon &amp; Lime</div><div class="pdf">12 × 12oz Cans</div>
+      <div class="pdprice">From <b>$21.99</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-lemonlime-12pack"
+        data-item-name="ICON Lemon &amp; Lime — 12-Pack Tray"
+        data-item-price="21.99"
+        data-item-image="images/icon-12pack-lemonlime.webp"
+        data-item-url="#bundles"
+        data-item-description="12 × 12 fl oz cans">Add to Cart</button>
+    </article>
+    <article class="pd pd12 r d3">
+      <div class="pdg"></div>
+      <span class="pd12-badge">12-Pack</span>
+      <img src="images/icon-12pack-strawberrykiwi.webp" alt="ICON Strawberry Kiwi 12-Pack Tray" loading="lazy">
+      <div class="pdn">Strawberry Kiwi</div><div class="pdf">12 × 12oz Cans</div>
+      <div class="pdprice">From <b>$21.99</b></div>
+      <button type="button" class="pdb snipcart-add-item"
+        data-item-id="icon-strawberrykiwi-12pack"
+        data-item-name="ICON Strawberry Kiwi — 12-Pack Tray"
+        data-item-price="21.99"
+        data-item-image="images/icon-12pack-strawberrykiwi.webp"
+        data-item-url="#bundles"
+        data-item-description="12 × 12 fl oz cans">Add to Cart</button>
+    </article>
+  </div>
+  <div class="ct" style="margin-top:2rem"><p class="lead r" style="font-size:.82rem;color:var(--gr)">Mix and match flavors — add multiple trays to build your own case · Free shipping on all 12-packs</p></div>
+</section>
+
+<!-- SCIENCE — fully filled section -->
+<section class="sci" id="science">
+  <div class="sci-bg">H₂</div>
+  <div class="sci-mesh"></div>
+  <div class="scin">
+    <div>
+      <p class="eyebrow r" id="scl">The Science</p>
+      <h2 class="sh r d1" id="sch">Why Hydrogen +<br><em>Electrolytes?</em></h2>
+      <p class="lead r d2" id="scp">Dual hydration power — hydrogen supports cellular recovery while electrolytes restore your body's natural fluid balance. Together they deliver hydration, energy, and protection that plain water simply can't match.</p>
+      <div class="scg r d3">
+        <div class="scc"><div class="scnum" data-count="3.6" data-suffix="B+">$3.6B+</div><div class="sclabel">Market Size 2026</div></div>
+        <div class="scc"><div class="scnum" data-count="18" data-suffix="%">18%</div><div class="sclabel">Global Annual Growth</div></div>
+        <div class="scc"><div class="scnum" data-count="1000" data-suffix="+">1,000+</div><div class="sclabel">Peer-Reviewed Studies</div></div>
+        <div class="scc"><div class="scnum" data-count="0">0</div><div class="sclabel">Calories Per Can</div></div>
+      </div>
+    </div>
+    <div class="scv r-s">
+      <div class="scglow"></div>
+      <div class="scr scr1"></div>
+      <div class="scr scr2"></div>
+      <div><img src="https://www.icon-water.com/cdn/shop/files/ElevatedICONJustWaterCan.png?v=1771437654&width=533" alt="Science" id="scimg" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY STUDIES STRIP -->
+<div class="studies">
+  <div class="studies-in">
+    <div class="studies-label r">Published Research — What the Science Says</div>
+    <div class="studies-grid">
+      <div class="study-item r"><div class="study-title">Muscle Recovery in Elite Swimmers (PMC 2024)</div><div class="study-desc">HRW supplementation reduced soreness, creatine kinase, and improved post-training recovery markers.</div></div>
+      <div class="study-item r d1"><div class="study-title">Reduces Inflammatory Response (2020)</div><div class="study-desc">Randomized controlled trial showing significant down-regulation of inflammatory networks after hydrogen-rich water consumption.</div></div>
+      <div class="study-item r d2"><div class="study-title">Antioxidant & Anti-inflammatory (PMC 2024)</div><div class="study-desc">Comprehensive review of clinical studies confirming antioxidant and anti-inflammatory potential of electrolyzed hydrogen water.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- NUTRITION -->
+<section class="sec nutri" id="nutrition">
+  <div class="ct" style="margin-bottom:1rem">
+    <p class="eyebrow r">What's Inside</p>
+    <h2 class="sh r d1">Three Ingredients.<br><em>Infinite</em> Purpose.</h2>
+  </div>
+  <div class="ng">
+    <div class="nfact r-l">
+      <div class="nft">Nutrition Facts</div>
+      <div class="nfr"><span>Serving size</span><b>1 can (12 fl oz / 355 mL)</b></div>
+      <div class="nfr"><span>Calories</span><b>0</b></div>
+      <div class="nfr"><span>Total Fat</span><b>0g — 0%</b></div>
+      <div class="nfr"><span>Sodium</span><b>5mg — 0%</b></div>
+      <div class="nfr"><span>Total Carbohydrate</span><b>0g — 0%</b></div>
+      <div class="nfr"><span>Protein</span><b>0g — 0%</b></div>
+      <div class="nfi"><strong>Ingredients:</strong> Ultra Purified Water, Sea Salt (naturally contains trace minerals), Molecular Hydrogen.</div>
+    </div>
+    <div class="nr r-r">
+      <p class="eyebrow" style="margin-bottom:.8rem">Clean Label</p>
+      <h3 class="sh" style="font-size:clamp(2rem,4vw,3.2rem);margin-bottom:1rem">Nothing to Hide.<br><em>Everything</em> to Gain.</h3>
+      <p class="lead" style="margin-bottom:1.8rem;font-size:.95rem">We strip water down to what matters: ultra-purified RO water, sea salt for natural electrolytes and trace minerals, and dissolved molecular hydrogen. No artificial flavors, no preservatives, no sugars, no fillers. Period.</p>
+      <div class="nbadges">
+        <span class="nbadge">Zero Sugar</span>
+        <span class="nbadge">Zero Calories</span>
+        <span class="nbadge">Vegan</span>
+        <span class="nbadge">Gluten Free</span>
+        <span class="nbadge">Non-GMO</span>
+        <span class="nbadge">No Caffeine</span>
+        <span class="nbadge">Kosher</span>
+        <span class="nbadge">3 Ingredients</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="reviews">
+  <div class="ct">
+    <p class="eyebrow r">Real People. Real Results.</p>
+    <h2 class="sh r d1">What People Are <em>Saying</em></h2>
+    <p class="lead r d2">Over 10,000 cans sold. Here's what athletes, professionals, and everyday people are experiencing.</p>
+  </div>
+  <div class="tg">
+    <div class="tc r">
+      <div class="tst">★★★★★</div>
+      <p class="tq">"I've been training for 15 years and tried every premium water brand. Elevated ICON hits different. The recovery difference after hard sessions is real — this is my daily go-to now."</p>
+      <div class="ta">Marcus T.</div><div class="tr">Verified Buyer · Fitness Coach, 12 years</div>
+    </div>
+    <div class="tc r d1">
+      <div class="tst">★★★★★</div>
+      <p class="tq">"The watermelon flavor is genuinely incredible — no artificial taste, just clean water with a hint of fruit. I replaced all my sports drinks with this and haven't looked back."</p>
+      <div class="ta">Sarah K.</div><div class="tr">Verified Buyer · Triathlete</div>
+    </div>
+    <div class="tc r d2">
+      <div class="tst">★★★★★</div>
+      <p class="tq">"As a nutritionist I scrutinize every ingredient claim. Hydrogen water has solid peer-reviewed backing, and ICON delivers it with the cleanest label I've seen in the category. Recommended."</p>
+      <div class="ta">Dr. James R.</div><div class="tr">Verified Buyer · Sports Nutritionist</div>
+    </div>
+  </div>
+</section>
+
+<div class="tk"><div class="tkt" id="tk3"></div></div>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq">
+  <div class="ct">
+    <p class="eyebrow r">Common Questions</p>
+    <h2 class="sh r d1">Everything You Want to <em>Know</em></h2>
+  </div>
+  <div class="fl">
+    <div class="fi r"><div class="fq">What exactly is hydrogen water and how is it different?<span class="fq-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div><div class="fa">Hydrogen water is ultra-purified water infused with dissolved molecular hydrogen (H₂) gas. Unlike regular water, it contains additional H₂ molecules that act as selective antioxidants — small enough to penetrate every cell in your body. They target and neutralize only the harmful free radicals while leaving your body's beneficial reactive oxygen species intact.</div></div>
+    <div class="fi r d1"><div class="fq">Why add electrolytes to hydrogen water?<span class="fq-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div><div class="fa">Electrolytes like sodium, potassium, and magnesium help your body absorb and retain water more efficiently. While hydrogen works at the cellular level to reduce oxidative stress and inflammation, electrolytes restore your body's natural fluid balance and keep muscles and nerves functioning properly. Together, they deliver complete hydration that plain water simply cannot.</div></div>
+    <div class="fi r d2"><div class="fq">Is hydrogen water backed by real science?<span class="fq-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div><div class="fa">Yes — extensively. Over 1,000 peer-reviewed studies in journals like PubMed and PMC document molecular hydrogen's potential to reduce inflammation, fight oxidative stress, support muscle recovery, improve exercise performance, and enhance cognitive function. This isn't wellness marketing — it's published clinical science.</div></div>
+    <div class="fi r d3"><div class="fq">How many calories are in Elevated ICON?<span class="fq-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div><div class="fa">Zero. Every single flavor — Pure Water, Watermelon, Lemon &amp; Lime, and Strawberry Kiwi — contains 0 calories, 0 sugar, and 0 fat. The flavored variants add only natural flavors to the same clean base. Clean label always.</div></div>
+    <div class="fi r"><div class="fq">When is the best time to drink it?<span class="fq-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div><div class="fa">Anytime is the right time. For athletes, before and after workouts maximizes recovery benefits. For focus, first thing in the morning supports mental clarity without caffeine. The truth is — it's simply better water, and every sip is a good one.</div></div>
+    <div class="fi r d1"><div class="fq">What pack sizes are available?<span class="fq-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div><div class="fa">Elevated ICON is available in 4, 6, 8, 12, 15, and 24-pack formats for both single flavors and mixed-flavor variety packs. Free shipping on qualifying orders. Subscribe and save options available at the store.</div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-in">
+    <p class="eyebrow r">The Future of Hydration Is Here</p>
+    <h2 class="sh r d1">Ready to <em>Elevate?</em></h2>
+    <p class="cta-p r d2">Premium hydrogen water. Zero calories. Backed by 1,000+ studies. 4 flavors. Built for people who demand more from their water — and from themselves.</p>
+    <div class="r d3"><a href="https://www.icon-water.com/collections/shop-all-icon-hydrogen-water" class="btn-p" target="_blank">Shop Elevated ICON →</a></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftg">
+    <div class="ftb">ELEVATED <span>ICON</span><p>Hydrogen-infused water for optimal hydration and cellular wellness. Advanced hydration for athletes, professionals, and health-conscious people everywhere.</p></div>
+    <div class="ftc"><h5>Products</h5><ul>
+      <li><a href="https://www.icon-water.com/products/elevated-icon-hydrogen-water">Hydrogen Water</a></li>
+      <li><a href="https://www.icon-water.com/products/elevated-icon-hydrogen-water-with-a-touch-of-watermelon">Watermelon</a></li>
+      <li><a href="https://www.icon-water.com/products/elevated-icon-hydrogen-water-lemon-lime">Lemon &amp; Lime</a></li>
+      <li><a href="https://www.icon-water.com/products/elevated-icon-hydrogen-water-strawberry-kiwi">Strawberry Kiwi</a></li>
+    </ul></div>
+    <div class="ftc"><h5>Company</h5><ul>
+      <li><a href="https://www.icon-water.com/pages/about-icon">About</a></li>
+      <li><a href="https://www.icon-water.com/pages/science">Science</a></li>
+      <li><a href="https://www.icon-water.com/pages/product-info">Product Info</a></li>
+      <li><a href="https://www.icon-water.com/pages/contact">Contact</a></li>
+    </ul></div>
+    <div class="ftc"><h5>Connect</h5><ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">TikTok</a></li>
+      <li><a href="#">YouTube</a></li>
+    </ul></div>
+  </div>
+  <div class="ftbot"><p>© 2026 Elevated ICON. All Rights Reserved.</p><p>Made in USA · Ships Nationwide</p></div>
+</footer>
+
+<button class="sticky" id="sticky" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now →</button>
+
+<script>
+/* ── CURSOR ── */
+const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
+let mx=window.innerWidth/2,my=window.innerHeight/2,cx=mx,cy=my;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function lp(){cx+=(mx-cx)*.11;cy+=(my-cy)*.11;cur2.style.left=cx+'px';cur2.style.top=cy+'px';requestAnimationFrame(lp)})();
+
+/* ── FLAVOR DATA ── */
+const FL=[
+  {id:'water',name:'Hydrogen Water',img:'https://www.icon-water.com/cdn/shop/files/ElevatedICONJustWaterCan.png?v=1771437654&width=533',pill:'Hydrogen-Infused Hydration',p:'Premium hydrogen water with electrolytes. <strong>Zero calories. Zero sugar. Zero compromise.</strong> Advanced hydration engineered for recovery, performance, and clarity.',sh:'Why Hydrogen +<br><em>Electrolytes?</em>',sp:'Dual hydration power — hydrogen supports cellular recovery while electrolytes restore your body\'s natural fluid balance. Together they deliver hydration, energy, and protection that plain water simply can\'t match.'},
+  {id:'watermelon',name:'Watermelon',img:'https://www.icon-water.com/cdn/shop/files/ElevatedICONWatermelonCan.png?v=1771437925&width=533',pill:'Natural Watermelon Flavor',p:'Refreshing watermelon hydrogen water. <strong>Natural flavor. Zero sugar. Zero calories.</strong> All the hydration benefits with a taste that makes every sip feel like summer.',sh:'Flavor Meets<br><em>Function</em>',sp:'Same advanced molecular hydrogen and electrolyte balance. Now with natural watermelon flavor. Every sip delivers cellular hydration, antioxidant protection, and recovery support with a refreshing twist.'},
+  {id:'lemon',name:'Lemon & Lime',img:'https://www.icon-water.com/cdn/shop/files/ElevatedICONLemonLimeCan.png?v=1771438448&width=533',pill:'Natural Lemon & Lime Flavor',p:'Crisp lemon-lime hydrogen water. <strong>Natural citrus. Zero sugar. Zero calories.</strong> Bright, clean hydration powered by molecular hydrogen and balanced electrolytes.',sh:'Citrus Meets<br><em>Science</em>',sp:'Natural lemon and lime paired with molecular hydrogen power. Electrolytes accelerate absorption while hydrogen fights oxidative stress. The perfect citrus-forward hydration for any time of day.'},
+  {id:'strawberry',name:'Strawberry Kiwi',img:'https://www.icon-water.com/cdn/shop/files/ElevatedICONStawberryKiwiCan.png?v=1771438574&width=533',pill:'Natural Strawberry Kiwi',p:'Sweet strawberry-kiwi hydrogen water. <strong>Natural flavor. Zero sugar. Zero calories.</strong> Premium hydration that tastes as good as it performs.',sh:'Taste Meets<br><em>Performance</em>',sp:'Natural strawberry kiwi layered over hydrogen-infused, electrolyte-balanced water. Delivers cellular hydration, antioxidant protection, and a flavor that makes healthy hydration something you actually crave.'}
+];
+let fi=0;
+const dots=document.getElementById('fdots');
+FL.forEach((_,i)=>{const d=document.createElement('div');d.className='fnav-dot'+(i===0?' on':'');d.onclick=()=>setFlavor(i);dots.appendChild(d)});
+
+function setFlavor(i){
+  fi=i;const d=FL[i];
+  document.documentElement.setAttribute('data-f',d.id);
+  document.querySelectorAll('.fnav-dot').forEach((dot,j)=>dot.classList.toggle('on',j===i));
+  document.getElementById('fname').textContent=d.name;
+  const img=document.getElementById('himg');
+  img.style.transition='opacity .35s,transform .4s cubic-bezier(.76,0,.24,1)';
+  img.style.opacity='0';img.style.transform='scale(.84) rotate(14deg) translateY(18px)';
+  setTimeout(()=>{
+    img.src=d.img;
+    document.getElementById('bimg').src=d.img;
+    document.getElementById('scimg').src=d.img;
+    img.style.opacity='1';img.style.transform='';
+  },280);
+  document.getElementById('ho').textContent=d.pill;
+  document.getElementById('hpx').innerHTML=d.p;
+  document.getElementById('sch').innerHTML=d.sh;
+  document.getElementById('scp').textContent=d.sp;
+}
+document.getElementById('fnext').onclick=()=>setFlavor((fi+1)%FL.length);
+document.getElementById('fprev').onclick=()=>setFlavor((fi-1+FL.length)%FL.length);
+let autoT=setInterval(()=>setFlavor((fi+1)%FL.length),5000);
+document.querySelectorAll('.fnav-btn,.fnav-dot').forEach(el=>el.addEventListener('click',()=>{clearInterval(autoT);autoT=setInterval(()=>setFlavor((fi+1)%FL.length),8000)}));
+
+/* ── SCROLL ── */
+addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  document.getElementById('nav').classList.toggle('scrolled',scrollY>60);
+  document.getElementById('sticky').classList.toggle('show',scrollY>500);
+},{passive:true});
+
+/* ── PARALLAX CAN ── */
+addEventListener('scroll',()=>{
+  if(scrollY>1000)return;
+  document.getElementById('hcan').style.transform=`translateY(${scrollY*-.09}px) rotate(${scrollY*.033}deg)`;
+},{passive:true});
+
+/* ── REVEAL ── */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}}),{threshold:.04,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.r,.r-l,.r-r,.r-s').forEach(el=>io.observe(el));
+
+/* ── COUNTER ANIMATION ── */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target;
+  const target=parseFloat(el.dataset.count||el.textContent.replace(/[^0-9.]/g,''));
+  const suffix=el.dataset.suffix||el.textContent.replace(/^[\d.]+/,'');
+  const prefix=el.textContent[0]==='$'?'$':'';
+  if(!target){el.textContent=prefix+'0'+suffix;cio.unobserve(el);return}
+  const isFloat=target%1!==0,dur=1600;let start=0;
+  const run=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1),e2=1-Math.pow(1-p,3);
+    el.textContent=prefix+(isFloat?(e2*target).toFixed(1):(Math.round(e2*target)).toLocaleString())+suffix;
+    if(p<1)requestAnimationFrame(run);};
+  requestAnimationFrame(run);cio.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('.scnum').forEach(el=>cio.observe(el));
+
+/* ── TICKERS ── */
+function bT(id,w){const el=document.getElementById(id);if(!el)return;let h='';for(let r=0;r<2;r++)w.forEach((v,i)=>{h+=`<span class="${id==='navtk'?'nt':'tw'}${i%3===0?' c':''}">${v}</span><span class="${id==='navtk'?'nd':'td2'}"></span>`});el.innerHTML=h}
+bT('navtk',['Hydrogen Infused','Zero Calories','Zero Sugar','Electrolyte Balanced','4 Flavors','12oz Sleek Can','Backed by Science','Ships Nationwide','Non-GMO','Vegan','Kosher','Gluten Free']);
+bT('tk1',['Advanced Hydration','Molecular Hydrogen','Cellular Recovery','Pure RO Water','Performance Water','Living Hydration','Clean Energy','No Compromise','Better Than Plain Water']);
+bT('tk2',['1,000+ Studies','Dual Hydration','Faster Absorption','Muscle Recovery','Mental Clarity','Reduces Inflammation','Natural Energy','Zero Caffeine']);
+bT('tk3',['Water','Watermelon','Lemon Lime','Strawberry Kiwi','Multi-Packs','Free Shipping','Premium Quality','Made in USA','Ships Nationwide']);
+
+/* ── FAQ ── */
+document.querySelectorAll('.fq').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const it=q.parentElement;
+    document.querySelectorAll('.fi').forEach(i=>{if(i!==it)i.classList.remove('open')});
+    it.classList.toggle('open');
+  });
+});
+
+/* ── MOBILE NAV ── */
+let mOpen=false;
+document.querySelector('.mb')?.addEventListener('click',()=>{
+  mOpen=!mOpen;const m=document.querySelector('.nm');if(!m)return;
+  if(mOpen){Object.assign(m.style,{display:'flex',flexDirection:'column',position:'fixed',top:'82px',left:'0',right:'0',background:'rgba(255,255,255,.98)',backdropFilter:'blur(30px)',padding:'2rem 2.5rem',gap:'1.2rem',zIndex:'8999',borderBottom:'1px solid rgba(0,0,0,.06)',boxShadow:'0 20px 60px rgba(0,0,0,.1)'});}
+  else{m.style.display='';}
+});
+
+/* ── MAGNETIC BUTTONS ── */
+document.querySelectorAll('.btn-p,.nc,.pdb,.btn-s').forEach(btn=>{
+  btn.addEventListener('mousemove',e=>{
+    const r=btn.getBoundingClientRect();
+    const x=(e.clientX-r.left-r.width/2)*.2;
+    const y=(e.clientY-r.top-r.height/2)*.2;
+    btn.style.transform=`translate(${x}px,${y}px) translateY(-2px)`;
+  });
+  btn.addEventListener('mouseleave',()=>{btn.style.transform='';});
+});
+</script>
+</body>
+</html>
